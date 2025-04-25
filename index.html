@@ -4,36 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kayan Trading Inc.</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
   <style>
-    :root {
-      --primary: #c41218;
-      --dark: #111;
-      --gray: #555;
-      --bg-light: #f9f9f9;
-      --font: 'Poppins', sans-serif;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: var(--font);
-    }
-
     body {
-      background: white;
-      color: var(--dark);
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #fff;
+      color: #111;
     }
 
     header {
-      background: #f1f1f1;
-      padding: 50px 10% 30px 10%;
+      background-color: #f2f2f2;
       text-align: center;
+      padding: 60px 20px 40px;
     }
 
     header img {
-      max-height: 65px;
+      max-height: 80px;
       margin-bottom: 30px;
     }
 
@@ -44,91 +31,88 @@
     }
 
     header p {
-      font-size: 1.1rem;
-      color: var(--gray);
       max-width: 700px;
       margin: 0 auto;
+      color: #444;
+      font-size: 1.1rem;
     }
 
     .section {
-      padding: 60px 10%;
-      background: var(--bg-light);
       display: flex;
       flex-wrap: wrap;
-      gap: 40px;
       justify-content: space-between;
+      padding: 60px 10%;
+      background-color: #fff;
+      gap: 40px;
     }
 
-    .section .column {
+    .column {
       flex: 1;
       min-width: 280px;
     }
 
-    .section h2 {
-      color: var(--primary);
+    .column h2 {
+      color: #c41218;
       font-size: 1.5rem;
       margin-bottom: 16px;
     }
 
-    .section p {
+    .column p {
       color: #444;
-      line-height: 1.7;
+      line-height: 1.6;
     }
 
     .form-box {
       max-width: 400px;
-      margin-top: 12px;
+      margin-top: 20px;
     }
 
     .form-box input[type="email"] {
       width: 100%;
-      padding: 12px 14px;
+      padding: 12px;
       font-size: 1rem;
-      border: 2px solid var(--primary);
+      border: 2px solid #c41218;
       border-radius: 6px;
       margin-bottom: 12px;
-      outline: none;
     }
 
     .form-box button {
       width: 100%;
-      background: var(--primary);
-      color: white;
+      background-color: #c41218;
+      color: #fff;
       padding: 12px;
-      border: none;
       font-size: 1rem;
-      font-weight: 500;
+      font-weight: 600;
+      border: none;
       border-radius: 6px;
       cursor: pointer;
-      transition: background 0.3s ease;
+      transition: background 0.3s;
     }
 
     .form-box button:hover {
-      background: #9e0e13;
+      background-color: #9e0e13;
     }
 
     footer {
       text-align: center;
-      padding: 20px 10%;
+      background-color: #f9f9f9;
+      color: #333;
       font-size: 0.9rem;
-      background: #111;
-      color: #eee;
-    }
-
-    footer a {
-      color: #eee;
-      text-decoration: underline;
+      padding: 20px 10px;
+      margin-top: 20px;
     }
 
     @media (max-width: 768px) {
       header h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
       }
+
       .section {
         flex-direction: column;
         text-align: center;
       }
-      .section .column {
+
+      .form-box {
         margin: 0 auto;
       }
     }
@@ -137,8 +121,8 @@
 <body>
 
   <header>
-    <img src="images/logo-kayan.PNG" alt="Kayan Trading Logo" />
-    <h1>Crafting Fragrances. Curating Lifestyle.</h1>
+    <img src="logo-kayan.PNG" alt="Kayan Trading Inc. Logo" />
+    <h1>Crafting Fragrances.<br>Curating Lifestyle.</h1>
     <p>Premium scents and carefully selected lifestyle goods for modern consumers who value elegance, quality, and authenticity.</p>
   </header>
 
@@ -160,7 +144,7 @@
   </section>
 
   <footer>
-    &copy; 2025 Kayan Trading Inc. — All rights reserved. Contact: <a href="mailto:hello@thekayan.com">hello@thekayan.com</a>
+    &copy; 2025 <strong>Kayan Trading</strong>. — All rights reserved.
   </footer>
 
 </body>
