@@ -1,31 +1,34 @@
+/* === Google Font === */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 /* === 1. الأساسيات العامة === */
 :root{
-  --red:#BA0C2F;          /* الأحمر الرسمي */
-  --gray:#53565A;         /* الرمادي الداكن للفوتر */
-  --light:#f6f6f6;
+  --red:#BA0C2F;
+  --gray:#53565A;
+  --light:#fafafa;
 }
-*{box-sizing:border-box; margin:0; padding:0;}
+*{box-sizing:border-box;margin:0;padding:0}
 body{
-  font-family: "Segoe UI", Arial, sans-serif;
-  line-height:1.6;
-  color:#333;
+  font-family:'Poppins',Arial,Helvetica,sans-serif;
   background:#fff;
+  color:#444;
+  line-height:1.7;
 }
-img{max-width:100%; height:auto;}
+img{max-width:100%;height:auto}
 
-/* === 2. الشعار العلوي === */
+/* === 2. الشعار الأعلى === */
 .logo-wrap{
   text-align:center;
-  padding:24px 8px;
+  padding:40px 8px 28px;
 }
-.logo-wrap img{max-height:70px}
+.logo-wrap img{max-height:80px}
 
 /* === 3. شريط التنقّل === */
 nav{
   background:var(--red);
   display:flex;
   justify-content:center;
-  gap:28px;
+  gap:32px;
   padding:14px 12px;
   flex-wrap:wrap;
 }
@@ -35,57 +38,46 @@ nav a{
   text-decoration:none;
   transition:opacity .25s;
 }
-nav a:hover{opacity:.8}
+nav a:hover{opacity:.75}
 
-/* === 4. المحتوى الرئيسي === */
-main{
-  max-width:900px;
-  margin:48px auto;
-  padding:0 20px;
-}
+/* === 4. حاوية المحتوى الموحدّة === */
+.container{max-width:1000px;margin:auto;padding:0 22px}
 
-/* عنوان رئيسي موحّد */
-main h1{
-  font-size:2rem;
-  margin-bottom:24px;
-  color:var(--red);
-}
+/* === 5. العناوين === */
+h1{font-size:2.2rem;margin-bottom:28px;color:var(--red)}
+h3{color:var(--red);margin-bottom:10px;font-size:1.15rem}
 
-/* === 5. صفحة الخدمات – شبكة الكروت === */
+/* === 6. شبكة الكروت للخدمات === */
 .cards{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
   gap:30px;
 }
 .card{
   background:#fff;
-  border:1px solid #e5e5e5;
-  border-radius:8px;
-  padding:20px;
-  box-shadow:0 2px 6px rgba(0,0,0,.06);
-  transition:transform .2s, box-shadow .2s;
+  border-radius:10px;
+  padding:24px 22px;
+  box-shadow:0 2px 8px rgba(0,0,0,.08);
+  transition:transform .25s,box-shadow .25s;
+  text-align:center;
 }
 .card:hover{
-  transform:translateY(-4px);
-  box-shadow:0 4px 12px rgba(0,0,0,.12);
+  transform:translateY(-6px);
+  box-shadow:0 6px 18px rgba(0,0,0,.12);
 }
-.card h3{color:var(--red); margin-bottom:10px; font-size:1.1rem}
-
-/* === 6. Google Form (Iframe) === */
-form iframe{border:none}
 
 /* === 7. الفوتر === */
 footer{
   background:var(--gray);
   color:#fff;
   text-align:center;
-  padding:22px 10px;
+  padding:26px 10px;
   margin-top:60px;
   font-size:.95rem;
 }
-
-/* === 8. استجابة الشاشات الصغيرة === */
-@media (max-width:600px){
-  nav{gap:16px}
-  main{margin:32px auto}
+/* === 8. الهواتف === */
+@media(max-width:600px){
+  h1{font-size:1.8rem}
+  nav{gap:18px}
+  .logo-wrap{padding:28px 8px 20px}
 }
