@@ -1,7 +1,7 @@
-/* === Google Font === */
+/* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-/* === 1. الأساسيات === */
+/* -------- أساسيات -------- */
 :root{
   --red:#BA0C2F;
   --gray:#53565A;
@@ -11,18 +11,18 @@ body{
   font-family:'Poppins',Arial,sans-serif;
   background:#fff;
   color:#444;
-  line-height:1.7;
+  line-height:1.75;
 }
 img{max-width:100%;height:auto}
 
-/* === 2. الشعار العلوي === */
+/* -------- الشعار -------- */
 .logo-wrap{
   text-align:center;
   padding:40px 8px 28px;
 }
 .logo-wrap img{max-height:80px}
 
-/* === 3. شريط التنقّل === */
+/* -------- شريط التنقّل -------- */
 nav{
   background:var(--red);
   display:flex;
@@ -39,14 +39,14 @@ nav a{
 }
 nav a:hover{opacity:.75}
 
-/* === 4. حاوية المحتوى === */
+/* -------- الحاوية -------- */
 .container{max-width:1000px;margin:auto;padding:0 22px}
 
-/* === 5. العناوين === */
+/* -------- العناوين -------- */
 h1{font-size:2.2rem;margin-bottom:28px;color:var(--red)}
 h3{color:var(--red);margin-bottom:10px;font-size:1.15rem}
 
-/* === 6. كروت الخدمات === */
+/* -------- كروت الخدمات -------- */
 .cards{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
@@ -65,7 +65,7 @@ h3{color:var(--red);margin-bottom:10px;font-size:1.15rem}
   box-shadow:0 6px 18px rgba(0,0,0,.12);
 }
 
-/* === 7. الفوتر === */
+/* -------- الفوتر -------- */
 footer{
   background:var(--gray);
   color:#fff;
@@ -75,7 +75,7 @@ footer{
   font-size:.95rem;
 }
 
-/* === 8. شاشات صغيرة === */
+/* -------- هواتف -------- */
 @media(max-width:600px){
   h1{font-size:1.8rem}
   nav{gap:18px}
