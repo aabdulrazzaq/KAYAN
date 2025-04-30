@@ -5,73 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Our Services - Kayan Canada</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fff;
-      color: #333;
-    }
-
-    header {
-      background-color: #fff;
-      border-bottom: 2px solid #BA0C2F;
-      padding: 20px;
-      text-align: center;
-    }
-
-    header img {
-      max-width: 200px;
-    }
-
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fff; color: #333; }
     nav {
       background-color: #BA0C2F;
-      padding: 10px;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
     }
-
+    nav img {
+      max-height: 40px;
+      margin-right: auto;
+    }
     nav a {
       color: white;
-      margin: 0 15px;
+      margin-left: 20px;
       text-decoration: none;
       font-weight: bold;
     }
-
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
+    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
     .services-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 30px;
     }
-
     .service-card {
       border: 1px solid #eee;
       border-radius: 8px;
       padding: 20px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-      transition: 0.3s ease;
     }
-
-    .service-card:hover {
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-
-    .service-title {
-      color: #BA0C2F;
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-
-    .service-description {
-      color: #555;
-      line-height: 1.6;
-    }
-
+    .service-title { color: #BA0C2F; font-size: 20px; margin-bottom: 10px; }
+    .service-description { color: #555; line-height: 1.6; }
     footer {
       background-color: #53565A;
       color: white;
@@ -83,11 +47,8 @@
 </head>
 <body>
 
-  <header>
-    <img src="logo-kayan.PNG" alt="Kayan Logo">
-  </header>
-
   <nav>
+    <img src="logo-kayan.PNG" alt="Kayan Logo">
     <a href="index.html">Home</a>
     <a href="about.html">About Us</a>
     <a href="services.html">Our Services</a>
@@ -96,10 +57,6 @@
 
   <section>
     <h1 style="text-align:center; color:#BA0C2F;">Our Services</h1>
-    <p style="text-align:center; max-width: 700px; margin: 0 auto 40px;">
-      At Kayan Canada, we offer a growing range of services focused on international trade, retail, and brand development.
-    </p>
-
     <div class="services-container">
       <div class="service-card">
         <div class="service-title">Perfume Brand Development</div>
@@ -107,16 +64,14 @@
           We create and launch exclusive perfume brands tailored to the Canadian market, blending Eastern heritage with modern elegance.
         </div>
       </div>
-
       <div class="service-card">
         <div class="service-title">Import & Export</div>
         <div class="service-description">
-          Kayan Trading Inc facilitates international trade, importing high-quality products and exporting Canadian excellence to the world.
+          Kayan facilitates international trade, importing high-quality products and exporting Canadian excellence to the world.
         </div>
       </div>
-
       <div class="service-card">
-        <div class="service-title">Wholesale & Retail Solutions</div>
+        <div class="service-title">Wholesale & Retail</div>
         <div class="service-description">
           We provide B2B and B2C distribution channels for both our own brands and partner products across Canada.
         </div>
