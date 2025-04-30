@@ -39,8 +39,37 @@
 
     section {
       padding: 40px 20px;
-      max-width: 800px;
+      max-width: 1000px;
       margin: auto;
+    }
+
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      border: 1px solid #eee;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: 0.3s ease;
+    }
+
+    .project-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .project-title {
+      color: #BA0C2F;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .project-description {
+      color: #555;
+      line-height: 1.6;
     }
 
     footer {
@@ -65,13 +94,33 @@
   </nav>
 
   <section>
-    <h1>Our Projects</h1>
-    <p>
-      At Kayan Trading Inc, our first active project is the development and distribution of our own exclusive perfume brand in Canada. We focus on creating high-quality, elegant fragrances that combine Eastern richness with Western refinement.
+    <h1 style="text-align:center; color:#BA0C2F;">Our Projects</h1>
+    <p style="text-align:center; max-width: 700px; margin: 0 auto 40px;">
+      At Kayan Trading Inc, we take pride in building high-quality, forward-thinking business ventures. Here are some of our current and upcoming projects:
     </p>
-    <p>
-      Future projects will expand into other product lines and import/export sectors, always staying true to our commitment to quality and innovation.
-    </p>
+
+    <div class="projects-container">
+      <div class="project-card">
+        <div class="project-title">Perfume Brand Launch</div>
+        <div class="project-description">
+          Our flagship project involves developing a luxury perfume brand tailored for the Canadian market. We blend Eastern aromatic richness with Western elegance to create a unique fragrance experience.
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-title">Future Imports Expansion</div>
+        <div class="project-description">
+          We're preparing to expand our import/export operations to include specialty foods, natural products, and home essentials from select global markets.
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-title">Wholesale Distribution Platform</div>
+        <div class="project-description">
+          A digital B2B platform for wholesale buyers across Canada, streamlining access to high-quality imported products with local warehousing and fulfillment support.
+        </div>
+      </div>
+    </div>
   </section>
 
   <footer>
