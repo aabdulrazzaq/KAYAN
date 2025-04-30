@@ -1,22 +1,21 @@
 /* === Google Font === */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-/* === 1. الأساسيات العامة === */
+/* === 1. الأساسيات === */
 :root{
   --red:#BA0C2F;
   --gray:#53565A;
-  --light:#fafafa;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{
-  font-family:'Poppins',Arial,Helvetica,sans-serif;
+  font-family:'Poppins',Arial,sans-serif;
   background:#fff;
   color:#444;
   line-height:1.7;
 }
 img{max-width:100%;height:auto}
 
-/* === 2. الشعار الأعلى === */
+/* === 2. الشعار العلوي === */
 .logo-wrap{
   text-align:center;
   padding:40px 8px 28px;
@@ -40,14 +39,14 @@ nav a{
 }
 nav a:hover{opacity:.75}
 
-/* === 4. حاوية المحتوى الموحدّة === */
+/* === 4. حاوية المحتوى === */
 .container{max-width:1000px;margin:auto;padding:0 22px}
 
 /* === 5. العناوين === */
 h1{font-size:2.2rem;margin-bottom:28px;color:var(--red)}
 h3{color:var(--red);margin-bottom:10px;font-size:1.15rem}
 
-/* === 6. شبكة الكروت للخدمات === */
+/* === 6. كروت الخدمات === */
 .cards{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
@@ -75,7 +74,8 @@ footer{
   margin-top:60px;
   font-size:.95rem;
 }
-/* === 8. الهواتف === */
+
+/* === 8. شاشات صغيرة === */
 @media(max-width:600px){
   h1{font-size:1.8rem}
   nav{gap:18px}
