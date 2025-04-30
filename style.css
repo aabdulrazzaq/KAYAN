@@ -1,0 +1,91 @@
+/* === 1. الأساسيات العامة === */
+:root{
+  --red:#BA0C2F;          /* الأحمر الرسمي */
+  --gray:#53565A;         /* الرمادي الداكن للفوتر */
+  --light:#f6f6f6;
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+body{
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height:1.6;
+  color:#333;
+  background:#fff;
+}
+img{max-width:100%; height:auto;}
+
+/* === 2. الشعار العلوي === */
+.logo-wrap{
+  text-align:center;
+  padding:24px 8px;
+}
+.logo-wrap img{max-height:70px}
+
+/* === 3. شريط التنقّل === */
+nav{
+  background:var(--red);
+  display:flex;
+  justify-content:center;
+  gap:28px;
+  padding:14px 12px;
+  flex-wrap:wrap;
+}
+nav a{
+  color:#fff;
+  font-weight:600;
+  text-decoration:none;
+  transition:opacity .25s;
+}
+nav a:hover{opacity:.8}
+
+/* === 4. المحتوى الرئيسي === */
+main{
+  max-width:900px;
+  margin:48px auto;
+  padding:0 20px;
+}
+
+/* عنوان رئيسي موحّد */
+main h1{
+  font-size:2rem;
+  margin-bottom:24px;
+  color:var(--red);
+}
+
+/* === 5. صفحة الخدمات – شبكة الكروت === */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+.card{
+  background:#fff;
+  border:1px solid #e5e5e5;
+  border-radius:8px;
+  padding:20px;
+  box-shadow:0 2px 6px rgba(0,0,0,.06);
+  transition:transform .2s, box-shadow .2s;
+}
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 12px rgba(0,0,0,.12);
+}
+.card h3{color:var(--red); margin-bottom:10px; font-size:1.1rem}
+
+/* === 6. Google Form (Iframe) === */
+form iframe{border:none}
+
+/* === 7. الفوتر === */
+footer{
+  background:var(--gray);
+  color:#fff;
+  text-align:center;
+  padding:22px 10px;
+  margin-top:60px;
+  font-size:.95rem;
+}
+
+/* === 8. استجابة الشاشات الصغيرة === */
+@media (max-width:600px){
+  nav{gap:16px}
+  main{margin:32px auto}
+}
