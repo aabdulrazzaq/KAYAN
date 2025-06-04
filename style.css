@@ -1,83 +1,52 @@
-/* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
-/* -------- أساسيات -------- */
 :root{
-  --red:#BA0C2F;
-  --gray:#53565A;
+  --color-primary:#b80a0a;
+  --color-dark:#424242;
+  --color-light:#ffffff;
+  --font-heading:'Poppins',system-ui,sans-serif;
+  --font-body:'Inter',system-ui,sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{
-  font-family:'Poppins',Arial,sans-serif;
-  background:#fff;
-  color:#444;
-  line-height:1.75;
+  font-family:var(--font-body);
+  line-height:1.6;
+  color:var(--color-dark);
+  background:var(--color-light);
+  scroll-behavior:smooth;
 }
-img{max-width:100%;height:auto}
-
-/* -------- الشعار -------- */
-.logo-wrap{
-  text-align:center;
-  padding:40px 8px 28px;
+.container{width:90%;max-width:1100px;margin:auto}
+header{background:var(--color-light);border-bottom:1px solid #e5e5e5}
+.navbar{display:flex;align-items:center;justify-content:space-between;padding:0.75rem 0}
+.navbar img{height:48px}
+.nav-links{display:flex;gap:1rem}
+.nav-links a{text-decoration:none;color:var(--color-dark);font-weight:500}
+.nav-links a.active,.nav-links a:hover{color:var(--color-primary)}
+#menu-toggle{display:none}
+.burger{display:none;font-size:1.5rem;cursor:pointer;user-select:none}
+@media(max-width:768px){
+  .nav-links{
+    position:absolute;top:64px;right:0;background:var(--color-light);
+    flex-direction:column;align-items:flex-start;width:200px;padding:1rem;border-left:1px solid #e5e5e5;
+    transform:translateX(100%);transition:transform .3s ease;
+  }
+  #menu-toggle:checked + .burger + .nav-links{transform:translateX(0)}
+  .burger{display:block}
 }
-.logo-wrap img{max-height:80px}
-
-/* -------- شريط التنقّل -------- */
-nav{
-  background:var(--red);
-  display:flex;
-  justify-content:center;
-  gap:32px;
-  padding:14px 12px;
-  flex-wrap:wrap;
+.hero{padding:4rem 0 3rem;text-align:center}
+.hero h1{font-family:var(--font-heading);font-size:2.5rem;margin-bottom:1rem;color:var(--color-primary)}
+.hero p{max-width:600px;margin:0 auto 1.5rem;font-size:1.1rem}
+.btn-primary{
+  background:var(--color-primary);color:var(--color-light);
+  padding:0.75rem 1.25rem;border-radius:4px;text-decoration:none;font-weight:600
 }
-nav a{
-  color:#fff;
-  font-weight:600;
-  text-decoration:none;
-  transition:opacity .25s;
-}
-nav a:hover{opacity:.75}
-
-/* -------- الحاوية -------- */
-.container{max-width:1000px;margin:auto;padding:0 22px}
-
-/* -------- العناوين -------- */
-h1{font-size:2.2rem;margin-bottom:28px;color:var(--red)}
-h3{color:var(--red);margin-bottom:10px;font-size:1.15rem}
-
-/* -------- كروت الخدمات -------- */
-.cards{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
-  gap:30px;
-}
+.section{padding:3rem 0}
+.section h2{font-family:var(--font-heading);font-size:2rem;text-align:center;margin-bottom:2rem;color:var(--color-primary)}
+.cards{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
 .card{
-  background:#fff;
-  border-radius:10px;
-  padding:24px 22px;
-  box-shadow:0 2px 8px rgba(0,0,0,.08);
-  transition:transform .25s,box-shadow .25s;
-  text-align:center;
+  border:1px solid #e5e5e5;border-radius:6px;padding:1.5rem;background:#fafafa;
+  transition:transform .2s
 }
-.card:hover{
-  transform:translateY(-6px);
-  box-shadow:0 6px 18px rgba(0,0,0,.12);
-}
-
-/* -------- الفوتر -------- */
+.card:hover{transform:translateY(-4px)}
 footer{
-  background:var(--gray);
-  color:#fff;
-  text-align:center;
-  padding:26px 10px;
-  margin-top:60px;
-  font-size:.95rem;
-}
-
-/* -------- هواتف -------- */
-@media(max-width:600px){
-  h1{font-size:1.8rem}
-  nav{gap:18px}
-  .logo-wrap{padding:28px 8px 20px}
+  background:var(--color-dark);color:var(--color-light);
+  text-align:center;padding:1rem 0;font-size:0.9rem;margin-top:2rem
 }
