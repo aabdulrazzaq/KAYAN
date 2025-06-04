@@ -2,41 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Our Services – Kayan Canada</title>
+  <title>Services – Kayan Trading Inc.</title>
+  <meta name="description" content="Discover the services we offer.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="logo-wrap"><img src="logo-kayan.PNG" alt="Kayan logo"></header>
+<header>
+  <div class="container navbar">
+    <a href="index.html"><img src="logo-kayan.PNG" alt="Kayan Trading logo" height="48"></a>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="services.html">Our Services</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="burger" aria-label="Menu">&#9776;</label>
 
-  <main class="container">
-    <h1>Our Services</h1>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
 
-    <div class="cards">
-      <div class="card">
-        <h3>Perfume Brand Development</h3>
-        <p>Creating and launching exclusive fragrances that blend Eastern heritage with modern elegance for the Canadian market.</p>
-      </div>
+<main>
+  <section class="section">
+    <div class="container">
+      <h2>Our Services</h2>
 
-      <div class="card">
-        <h3>Import &amp; Export</h3>
-        <p>Connecting Canadian consumers with premium products worldwide and showcasing Canadian excellence abroad.</p>
-      </div>
+      <div class="cards">
+        <div class="card">
+          <h3>Perfume Brand Development</h3>
+          <p>From concept to shelf, we craft exclusive perfume collections that resonate with Canadian tastes while honoring Eastern richness.</p>
+        </div>
 
-      <div class="card">
-        <h3>Wholesale &amp; Retail</h3>
-        <p>Comprehensive B2B and B2C distribution channels for our in-house and partner brands across Canada.</p>
+        <div class="card">
+          <h3>Import &amp; Export</h3>
+          <p>We streamline cross-border logistics, compliance, and market penetration for premium goods entering or leaving Canada.</p>
+        </div>
+
+        <div class="card">
+          <h3>Wholesale &amp; Retail</h3>
+          <p>Our distribution channels ensure nationwide reach for both B2B partners and direct consumers.</p>
+        </div>
       </div>
     </div>
-  </main>
+  </section>
+</main>
 
-  <footer>&copy; 2025 Kayan Trading Inc.</footer>
+<footer>
+  © 2025 Kayan Trading Inc. All rights reserved.
+</footer>
 </body>
 </html>
