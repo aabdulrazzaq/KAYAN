@@ -2,33 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Kayan Canada</title>
+  <title>Kayan Trading Inc. – Home</title>
+  <meta name="description" content="Premium perfumes, import, export, wholesale & retail in Canada.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="logo-wrap">
-    <img src="logo-kayan.PNG" alt="Kayan Trading Inc. logo">
-  </header>
+<header>
+  <div class="container navbar">
+    <a href="index.html"><img src="logo-kayan.PNG" alt="Kayan Trading logo" height="48"></a>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="services.html">Our Services</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="burger" aria-label="Menu">&#9776;</label>
 
-  <main class="container">
-    <h1>Welcome to Kayan Canada</h1>
-    <p>
-      <strong>Kayan Trading Inc.</strong> is a Canadian company based in Ottawa, established in 2025. 
-      We specialise in import, export, wholesale, and retail.  
-      Our flagship project is launching exclusive perfume brands crafted for the Canadian market, 
-      blending Eastern richness with modern elegance.
-    </p>
-  </main>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
 
-  <footer>&copy; 2025 Kayan Trading Inc. All rights reserved.</footer>
+<main>
+  <section class="hero container">
+    <h1>Welcome to <span>Kayan Canada</span></h1>
+    <p>Kayan Trading Inc. connects Canadian consumers with premium fragrances and global products.</p>
+    <a href="services.html" class="btn-primary">Explore Services</a>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Our Core Services</h2>
+      <div class="cards">
+        <div class="card">
+          <strong>Perfume Brand Development</strong><br>
+          Create and launch exclusive perfume lines blending Eastern heritage with modern elegance.
+        </div>
+        <div class="card">
+          <strong>Import &amp; Export</strong><br>
+          Bridging Canadian customers with premium products worldwide and showcasing Canadian excellence abroad.
+        </div>
+        <div class="card">
+          <strong>Wholesale &amp; Retail</strong><br>
+          Comprehensive B2B and B2C distribution for in-house and partner brands across Canada.
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2025 Kayan Trading Inc. All rights reserved.
+</footer>
+
 </body>
 </html>
