@@ -2,29 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Contact Us – Kayan Canada</title>
+  <title>Contact – Kayan Trading Inc.</title>
+  <meta name="description" content="Get in touch with us.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="logo-wrap"><img src="logo-kayan.PNG" alt="Kayan logo"></header>
+<header>
+  <div class="container navbar">
+    <a href="index.html"><img src="logo-kayan.PNG" alt="Kayan Trading logo" height="48"></a>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="services.html">Our Services</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="burger" aria-label="Menu">&#9776;</label>
 
-  <main class="container">
-    <h1>Contact Us</h1>
-    <p>We’d love to hear from you. Please fill out the form below and we’ll get back to you shortly.</p>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </div>
+</header>
 
-    <!-- Google Form embed -->
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfrhIv6SsHl7C6MZDwp6Xc3MRoLOC-8u1rssVY6rP9lYkb0ag/viewform?embedded=true"
-            width="100%" height="800" frameborder="0">Loading…</iframe>
-  </main>
+<main>
+  <section class="section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you! Fill in the form below and we’ll get back to you shortly.</p>
 
-  <footer>&copy; 2025 Kayan Trading Inc.</footer>
+      <form action="https://submit-form.com/your-id" method="POST" style="max-width:600px;margin:auto">
+        <label>Name<br>
+          <input type="text" name="name" required style="width:100%;padding:0.5rem;margin-bottom:1rem">
+        </label>
+
+        <label>Email<br>
+          <input type="email" name="email" required style="width:100%;padding:0.5rem;margin-bottom:1rem">
+        </label>
+
+        <label>Message<br>
+          <textarea name="message" rows="5" style="width:100%;padding:0.5rem;margin-bottom:1rem"></textarea>
+        </label>
+
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2025 Kayan Trading Inc. All rights reserved.
+</footer>
 </body>
 </html>
